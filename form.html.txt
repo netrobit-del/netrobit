@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Daily Work Form</title>
+<style>
+body {font-family: Arial; padding: 15px; background:#f2f2f2;}
+input, select, textarea, button {width:100%; padding:10px; margin:6px 0;}
+button {background:#0088cc; color:white; border:none;}
+</style>
+</head>
+<body>
+
+<h3>DAILY WORK FORM</h3>
+
+<form id="workForm">
+<label>Date</label>
+<input type="date" id="date" required>
+
+<label>Time</label>
+<input type="time" id="time" required>
+
+<label>Category</label>
+<select id="category">
+  <option>Electricity</option>
+  <option>Water</option>
+  <option>Solar</option>
+  <option>Plumbing</option>
+</select>
+
+<label>Task</label>
+<textarea id="task"></textarea>
+
+<label>Status</label>
+<select id="status">
+  <option>Completed</option>
+  <option>In Process</option>
+  <option>Pending</option>
+</select>
+
+<label>Confirmation</label>
+<select id="confirm">
+  <option>Yes</option>
+  <option>No</option>
+</select>
+
+<button type="submit">SUBMIT</button>
+</form>
+
+<script>
+document.getElementById("workForm").addEventListener("submit", function(){
+ alert("Form Sent ✅ (Trigger ready for workflow)");
+});
+</script>
+
+</body>
+</html>
